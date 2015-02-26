@@ -1,0 +1,574 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimuladorEscolherPersona" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/layCavaleiroRunico"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simcavaleirorunico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="Cavaleiro Rúnico" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layGuardiaoReal"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simguardiaoreal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:text="Guardião Real" />
+
+            	</LinearLayout>
+            </LinearLayout>
+
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/layArcano"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simarcano" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Arcano" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layFeiticeiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simfeiticeiro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Feiticeiro" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/laySentinela"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simsentinela" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Sentinela" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layTrovadorMusa"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simtrovadormusa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Trovador / Musa" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/layMecanico"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simmecanico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Mecânico" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/laybioquimico"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simbioquimico" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Bioquímico" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/laySicario"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simsicario" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Sicário" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layRenegado"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simrenegado" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Renegado" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/layArcebispo"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simarcebispo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Arcebispo" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layShura"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simshura" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Shura" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/layMestreTaekwon"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simmestretaekwon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Mestre Taekwon" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layEspiritualista"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simespiritualista" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Espiritualista" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/layKagerouOboro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simkagerouoboro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Kagerou / Oboro" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layJusticeiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simjusticeiro" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Justiceiro" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            <!-- Separação de layout -->
+            
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1" >
+                
+                <LinearLayout
+                    android:id="@+id/laySuperAprendiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simsuperaprendiz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Super Aprendiz" />
+
+            	</LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layClan"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/customborder"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="67dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/simemperium" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:textColor="#ff0000"
+                        android:text="Habilidades do Clã" />
+
+            	</LinearLayout>
+            </LinearLayout>
+            
+            
+            
+            
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

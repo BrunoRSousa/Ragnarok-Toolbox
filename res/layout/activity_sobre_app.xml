@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SobreApp" >
+
+    <Button
+        android:id="@+id/btnLogAtt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Log de atualizações" />
+
+    <Button
+        android:id="@+id/btnMaisInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Mais..." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" 
+        android:background="@drawable/customborder" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="   Esse aplicativo não possui nenhuma ligação com a Gravity Corp. &amp; Lee Myung Jin que são os donos da marca Registrada Ragnarok Online, nem com a Level Up! Interactive S.A. que é a representante do jogo oficial no brasil.\n   Esse aplicativo foi criado por um jogador de Ragnarok com intuito de servir como um guia de bolso para o jogo." />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/adsLayoutMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/txtClasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Menu Principal"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/nomeSimulacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text=" Seja bem vindo ao guia de Ragnarok Online!"
+        android:textSize="18sp" />
+    
+    <Button
+        android:id="@+id/btpersonagens"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Personagens" />
+
+    <Button
+        android:id="@+id/btsimulador"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Simulador de Habilidades" />
+
+    <Button
+        android:id="@+id/btinfoapk"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sobre o App" />
+
+    <Button
+        android:id="@+id/btsair"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Sair" />
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.gdrag"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <activity
+            android:name="br.com.gdrag.infos.MenuPrincipal"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="br.com.gdrag.infos.Classes"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_classes" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.simulador.SimuladorNovoOuLoad"
+            android:label="@string/title_activity_simulador_novo_ou_load" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.simulador.SimuladorEscolherPersona"
+            android:label="@string/title_activity_simulador_escolher_persona" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.simulador.SimuladorCavaleiroRunico"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_simulador_cavaleiro_runico" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.simulador.SimuladorLoad"
+            android:label="@string/title_activity_simulador_load" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.infos.SobreApp"
+            android:label="@string/title_activity_sobre_app" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.infos.LogDeAtualizacao"
+            android:label="@string/title_activity_log_de_atualizacao" >
+        </activity>
+        <activity
+            android:name="br.com.gdrag.simulador.SimuladorGuardiaoReal"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_simulador_guardiao_real" >
+        </activity>
+    </application>
+
+</manifest>
