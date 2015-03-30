@@ -1,0 +1,3796 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimuladorEspiritualista"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Pontos restantes para distribuição:" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtClasse1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:text="Classe 1: 49"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text=" | "
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtClasse2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Classe 2: 49"
+                android:textSize="12sp" />
+
+            
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--- Habilidades de Taekwon ---" />
+
+                <!-- Habilidade Chute Aéreo -->
+
+                <LinearLayout
+                    android:id="@+id/layChuteAereo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habchuteaereo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/chuteAereoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btChuteAereoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btChuteAereoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtChuteAereoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btChuteAereoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Corrida -->
+
+                <LinearLayout
+                    android:id="@+id/layCorrida"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcorrida" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/corridaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btCorridaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btCorridaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtCorridaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/10" />
+
+                            <Button
+                                android:id="@+id/btCorridaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Salto -->
+
+                <LinearLayout
+                    android:id="@+id/laySalto"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habsalto" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/saltoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btSaltoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btSaltoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtSaltoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btSaltoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Cambalhota -->
+
+                <LinearLayout
+                    android:id="@+id/layCambalhota"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcambalhota" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/cambalhotaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btCambalhotaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btCambalhotaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtCambalhotaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btCambalhotaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Trégua Rápida -->
+
+                <LinearLayout
+                    android:id="@+id/layTreguaRapida"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habtreguarapida" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/treguaRapidaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btTreguaRapidaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btTreguaRapidaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtTreguaRapidaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/10" />
+
+                            <Button
+                                android:id="@+id/btTreguaRapidaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Retiro Rápido -->
+
+                <LinearLayout
+                    android:id="@+id/layRetiroRapido"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habretirorapido" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/retiroRapidoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btRetiroRapidoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btRetiroRapidoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtRetiroRapidoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/10" />
+
+                            <Button
+                                android:id="@+id/btRetiroRapidoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Kihop -->
+
+                <LinearLayout
+                    android:id="@+id/layKihop"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habkihop" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kihopTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btKihopInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btKihopDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtKihopPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btKihopAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Brisa Leve -->
+
+                <LinearLayout
+                    android:id="@+id/layBrisaLeve"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habbrisaleve" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/brisaLeveTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoSuporte" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btBrisaLeveInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btBrisaLeveDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtBrisaLevePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btBrisaLeveAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Missão Taekwon -->
+
+                <LinearLayout
+                    android:id="@+id/layMissaoTaekwon"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habmissaotaekwon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/missaoTaekwonTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btMissaoTaekwonInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btMissaoTaekwonDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtMissaoTaekwonPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btMissaoTaekwonAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Postura Do Tornado -->
+
+                <LinearLayout
+                    android:id="@+id/layPosturaDoTornado"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habposturadotornado" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/posturaDoTornadoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btPosturaDoTornadoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btPosturaDoTornadoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtPosturaDoTornadoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btPosturaDoTornadoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Postura Da Patada Voadora -->
+
+                <LinearLayout
+                    android:id="@+id/layPosturaDaPatadaVoadora"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habposturadapatadavoadora" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/posturaDaPatadaVoadoraTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btPosturaDaPatadaVoadoraInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btPosturaDaPatadaVoadoraDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtPosturaDaPatadaVoadoraPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btPosturaDaPatadaVoadoraAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Postura Da Rasteira -->
+
+                <LinearLayout
+                    android:id="@+id/layPosturaDaRasteira"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habposturadarasteira" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/posturaDaRasteiraTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btPosturaDaRasteiraInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btPosturaDaRasteiraDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtPosturaDaRasteiraPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btPosturaDaRasteiraAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Postura Do Contrachute -->
+
+                <LinearLayout
+                    android:id="@+id/layPosturaDoContrachute"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habposturadocontrachute" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/posturaDoContrachuteTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btPosturaDoContrachuteInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btPosturaDoContrachuteDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtPosturaDoContrachutePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btPosturaDoContrachuteAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Chute Do Tornado -->
+
+                <LinearLayout
+                    android:id="@+id/layChuteDoTornado"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habchutedotornado" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/chuteDoTornadoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btChuteDoTornadoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btChuteDoTornadoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtChuteDoTornadoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btChuteDoTornadoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Patada Voadora -->
+
+                <LinearLayout
+                    android:id="@+id/layPatadaVoadora"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habpatadavoadora" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/patadaVoadoraTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btPatadaVoadoraInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btPatadaVoadoraDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtPatadaVoadoraPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btPatadaVoadoraAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Rasteira -->
+
+                <LinearLayout
+                    android:id="@+id/layRasteira"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habrasteirataekwon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/rasteiraTaekwonTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btRasteiraInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btRasteiraDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtRasteiraPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btRasteiraAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Contrachute -->
+
+                <LinearLayout
+                    android:id="@+id/layContrachute"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcontrachute" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/contrachuteTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btContrachuteInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btContrachuteDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtContrachutePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btContrachuteAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--- Habilidades de Espiritualista ---" />
+
+                <!-- Habilidade Kaina -->
+
+                <LinearLayout
+                    android:id="@+id/layKaina"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habkaina" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kainaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btKainaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btKainaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtKainaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btKainaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Kaahi -->
+
+                <LinearLayout
+                    android:id="@+id/layKaahi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habkaahi" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kaahiTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btKaahiInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btKaahiDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtKaahiPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btKaahiAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Kaite -->
+
+                <LinearLayout
+                    android:id="@+id/layKaite"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habkaite" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kaiteTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btKaiteInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btKaiteDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtKaitePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btKaiteAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Kaizel -->
+
+                <LinearLayout
+                    android:id="@+id/layKaizel"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habkaizel" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kaizelTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btKaizelInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btKaizelDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtKaizelPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btKaizelAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Kaupe -->
+
+                <LinearLayout
+                    android:id="@+id/layKaupe"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habkaupe" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/kaupeTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btKaupeInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btKaupeDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtKaupePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btKaupeAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Esma -->
+
+                <LinearLayout
+                    android:id="@+id/layEsma"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habesma" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/esmaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEsmaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEsmaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEsmaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/10" />
+
+                            <Button
+                                android:id="@+id/btEsmaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Estin -->
+
+                <LinearLayout
+                    android:id="@+id/layEstin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habestin" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/estinTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEstinInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEstinDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEstinPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btEstinAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Estun -->
+
+                <LinearLayout
+                    android:id="@+id/layEstun"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habestun" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/estunTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoOfensiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEstunInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEstunDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEstunPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btEstunAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Eska -->
+
+                <LinearLayout
+                    android:id="@+id/layEska"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habeska" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/eskaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEskaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEskaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEskaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/3" />
+
+                            <Button
+                                android:id="@+id/btEskaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Eske -->
+
+                <LinearLayout
+                    android:id="@+id/layEske"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habeske" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/eskeTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEskeInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEskeDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEskePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/3" />
+
+                            <Button
+                                android:id="@+id/btEskeAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Eswoo -->
+
+                <LinearLayout
+                    android:id="@+id/layEswoo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habeswoo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/eswooTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEswooInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEswooDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEswooPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/7" />
+
+                            <Button
+                                android:id="@+id/btEswooAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Alquimista -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoAlquimista"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodoalquimista" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoAlquimistaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoAlquimistaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoAlquimistaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoAlquimistaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoAlquimistaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Arruaceiro -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoArruaceiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodoarruaceiro" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoArruaceiroTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoArruaceiroInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoArruaceiroDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoArruaceiroPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoArruaceiroAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Artista -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoArtista"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodoartista" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoArtistaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoArtistaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoArtistaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoArtistaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoArtistaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Bruxo -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoBruxo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodobruxo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoBruxoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoBruxoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoBruxoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoBruxoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoBruxoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Caçador -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoCacador"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodocacador" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoCacadorTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoCacadorInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoCacadorDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoCacadorPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoCacadorAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Cavaleiro -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoCavaleiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodocavaleiro" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoCavaleiroTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoCavaleiroInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoCavaleiroDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoCavaleiroPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoCavaleiroAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Espiritualista -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoEspiritualista"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodoespiritualista" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoEspiritualistaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoEspiritualistaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoEspiritualistaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoEspiritualistaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoEspiritualistaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Ferreiro -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoFerreiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodoferreiro" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoFerreiroTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoFerreiroInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoFerreiroDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoFerreiroPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoFerreiroAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Mercenário -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoMercenario"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodomercenario" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoMercenarioTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoMercenarioInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoMercenarioDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoMercenarioPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoMercenarioAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Mestre Taekwon -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoMestreTaekwon"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodomestretaekwon" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoMestreTaekwonTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoMestreTaekwonInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoMestreTaekwonDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoMestreTaekwonPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoMestreTaekwonAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Monge -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoMonge"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodomonge" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoMongeTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoMongeInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoMongeDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoMongePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoMongeAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Sábio -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoSabio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodosabio" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoSabioTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoSabioInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoSabioDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoSabioPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoSabioAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Sacerdote -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoSacerdote"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodosacerdote" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoSacerdoteTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoSacerdoteInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoSacerdoteDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoSacerdotePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoSacerdoteAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Super Aprendiz -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoSuperAprendiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodosuperaprendiz" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoSuperaprendizTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoSuperAprendizInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoSuperAprendizDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoSuperAprendizPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoSuperAprendizAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Templário -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoTemplario"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodotemplario" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDoTemplarioTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoTemplarioInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoTemplarioDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoTemplarioPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoTemplarioAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Espírito Do Transcendentais -->
+
+                <LinearLayout
+                    android:id="@+id/layEspiritoDoTranscendentais"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habespiritodostranscendentais" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/espiritoDosTranscendentaisTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btEspiritoDoTranscendentaisInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btEspiritoDoTranscendentaisDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtEspiritoDoTranscendentaisPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btEspiritoDoTranscendentaisAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--- Habilidades de Espiritualista ---" />
+
+                
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btResetar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Resetar" />
+
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Salvar" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tgbtSomenteHabilidadeAprendida"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:text="ToggleButton"
+            android:textOff="Mostrar Somente Habilidades Aprendidas [Desativado]"
+            android:textOn="Mostrar Somente Habilidades Aprendidas [Ativado]"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>

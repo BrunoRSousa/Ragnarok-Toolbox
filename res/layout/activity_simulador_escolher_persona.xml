@@ -103,7 +103,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Arcano" />
 
             	</LinearLayout>
@@ -129,7 +128,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Feiticeiro" />
 
             	</LinearLayout>
@@ -164,7 +162,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Sentinela" />
 
             	</LinearLayout>
@@ -190,7 +187,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Trovador / Musa" />
 
             	</LinearLayout>
@@ -225,7 +221,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Mecânico" />
 
             	</LinearLayout>
@@ -251,7 +246,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Bioquímico" />
 
             	</LinearLayout>
@@ -286,7 +280,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Sicário" />
 
             	</LinearLayout>
@@ -312,7 +305,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Renegado" />
 
             	</LinearLayout>
@@ -347,7 +339,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Arcebispo" />
 
             	</LinearLayout>
@@ -373,7 +364,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Shura" />
 
             	</LinearLayout>
@@ -408,7 +398,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Mestre Taekwon" />
 
             	</LinearLayout>
@@ -434,7 +423,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Espiritualista" />
 
             	</LinearLayout>
@@ -469,7 +457,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Kagerou / Oboro" />
 
             	</LinearLayout>
@@ -495,7 +482,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Justiceiro" />
 
             	</LinearLayout>
@@ -530,7 +516,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Super Aprendiz" />
 
             	</LinearLayout>
@@ -556,7 +541,6 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical|center_horizontal"
                         android:gravity="center_horizontal"
-                        android:textColor="#ff0000"
                         android:text="Habilidades do Clã" />
 
             	</LinearLayout>

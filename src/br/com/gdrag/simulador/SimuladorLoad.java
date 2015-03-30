@@ -83,6 +83,113 @@ public class SimuladorLoad extends Activity {
 							startActivity(it);
 						}
 						
+						if (c.getString(2).equals("arcano")){
+							Intent it = new Intent(getBaseContext(), SimuladorArcano.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("feiticeiro")){
+							Intent it = new Intent(getBaseContext(), SimuladorFeiticeiro.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("sentinela")){
+							Intent it = new Intent(getBaseContext(), SimuladorSentinela.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("trovador")){
+							Intent it = new Intent(getBaseContext(), SimuladorTrovador.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("musa")){
+							Intent it = new Intent(getBaseContext(), SimuladorMusa.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("mecanico")){
+							Intent it = new Intent(getBaseContext(), SimuladorMecanico.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("bioquimico")){
+							Intent it = new Intent(getBaseContext(), SimuladorBioquimico.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("sicario")){
+							Intent it = new Intent(getBaseContext(), SimuladorSicario.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("renegado")){
+							Intent it = new Intent(getBaseContext(), SimuladorRenegado.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("arcebispo")){
+							Intent it = new Intent(getBaseContext(), SimuladorArcebispo.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("shura")){
+							Intent it = new Intent(getBaseContext(), SimuladorShura.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("mestre taekwon")){
+							Intent it = new Intent(getBaseContext(), SimuladorMestreTaekwon.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("espiritualista")){
+							Intent it = new Intent(getBaseContext(), SimuladorEspiritualista.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("kagerou")){
+							Intent it = new Intent(getBaseContext(), SimuladorKagerou.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("oboro")){
+							Intent it = new Intent(getBaseContext(), SimuladorOboro.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("justiceiro")){
+							Intent it = new Intent(getBaseContext(), SimuladorJusticeiro.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("super aprendiz expandido")){
+							Intent it = new Intent(getBaseContext(), SimuladorSuperAprendizExpandido.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
+						
+						if (c.getString(2).equals("cla")){
+							Intent it = new Intent(getBaseContext(), SimuladorCla.class);
+							it.putExtra("id", c.getInt(3));
+							startActivity(it);
+						}
 						
 						
 					}
@@ -111,6 +218,78 @@ public class SimuladorLoad extends Activity {
 								
 								if (c.getString(2).equals("guardiao real")){
 									db.delete("guardiao_real", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("arcano")){
+									db.delete("arcano", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("feiticeiro")){
+									db.delete("feiticeiro", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("sentinela")){
+									db.delete("sentinela", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("trovador")){
+									db.delete("trovador", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("musa")){
+									db.delete("musa", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("mecanico")){
+									db.delete("mecanico", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("bioquimico")){
+									db.delete("bioquimico", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("sicario")){
+									db.delete("sicario", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("renegado")){
+									db.delete("renegado", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("arcebispo")){
+									db.delete("arcebispo", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("shura")){
+									db.delete("shura", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("mestre taekwon")){
+									db.delete("mestre_taekwon", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("espiritualista")){
+									db.delete("espiritualista", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("kagerou")){
+									db.delete("kagerou", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("oboro")){
+									db.delete("oboro", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("justiceiro")){
+									db.delete("justiceiro", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("super aprendiz expandido")){
+									db.delete("super_aprendiz_expandido", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
+								}
+								
+								if (c.getString(2).equals("cla")){
+									db.delete("cla", "_id=?", new String[]{String.valueOf(deletarSimulacao)});
 								}
 								
 								db.delete("simulacoes_de_classes", "_id=?", new String[]{String.valueOf(deletarID)});
@@ -164,6 +343,24 @@ public class SimuladorLoad extends Activity {
 							SQLiteDatabase db = openOrCreateDatabase("simulador.db", Context.MODE_PRIVATE, null);
 							db.delete("cavaleiro_runico", null, null);
 							db.delete("guardiao_real", null, null);
+							db.delete("arcano", null, null);
+							db.delete("feiticeiro", null, null);
+							db.delete("sentinela", null, null);
+							db.delete("trovador", null, null);
+							db.delete("musa", null, null);
+							db.delete("mecanico", null, null);
+							db.delete("bioquimico", null, null);
+							db.delete("sicario", null, null);
+							db.delete("renegado", null, null);
+							db.delete("arcebispo", null, null);
+							db.delete("shura", null, null);
+							db.delete("mestre_taekwon", null, null);
+							db.delete("espiritualista", null, null);
+							db.delete("kagerou", null, null);
+							db.delete("oboro", null, null);
+							db.delete("justiceiro", null, null);
+							db.delete("super_aprendiz_expandido", null, null);
+							db.delete("cla", null, null);
 							db.delete("simulacoes_de_classes", null, null);
 							
 							db.close();

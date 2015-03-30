@@ -25,7 +25,7 @@ import android.widget.ToggleButton;
 
 public class SimuladorGuardiaoReal extends Activity {
 
-	//Botões de interrogações
+		//Botões de interrogações
 		Button btPericiaComEspadaInterrogacao,
 		btPericiaComEspadaDeDuasMaosInterrogacao,
 		btAumentarRecuperacaoDeHPInterrogacao,

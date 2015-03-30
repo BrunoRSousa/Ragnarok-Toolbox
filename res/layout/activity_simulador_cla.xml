@@ -1,0 +1,1275 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimuladorCla"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Pontos restantes para distribuição:" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtClasse1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:text="Pontos: 49"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:weightSum="1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="--- Habilidades de Clã ---" />
+
+                <!-- Habilidade Chamado Urgente -->
+
+                <LinearLayout
+                    android:id="@+id/layChamadoUrgente"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habchamadourgente" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/chamadoUrgenteTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoAtiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btChamadoUrgenteInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btChamadoUrgenteDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtChamadoUrgentePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btChamadoUrgenteAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Regeneração -->
+
+                <LinearLayout
+                    android:id="@+id/layRegeneracao"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habregeneracao" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/regeneracaoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoSuporte" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btRegeneracaoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btRegeneracaoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtRegeneracaoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/3" />
+
+                            <Button
+                                android:id="@+id/btRegeneracaoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Restauração -->
+
+                <LinearLayout
+                    android:id="@+id/layRestauracao"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habrestauracao" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/restauracaoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoSuporte" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btRestauracaoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btRestauracaoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtRestauracaoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btRestauracaoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Comando De Batalha -->
+
+                <LinearLayout
+                    android:id="@+id/layComandoDeBatalha"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcomandodebatalha" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/comandoDeBatalhaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoSuporte" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btComandoDeBatalhaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btComandoDeBatalhaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtComandoDeBatalhaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btComandoDeBatalhaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Autorização Oficial -->
+
+                <LinearLayout
+                    android:id="@+id/layAutorizacaoOficial"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habautorizacaooficial" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/autorizacaoOficialTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btAutorizacaoOficialInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btAutorizacaoOficialDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtAutorizacaoOficialPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btAutorizacaoOficialAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Contrato Com Kafra -->
+
+                <LinearLayout
+                    android:id="@+id/layContratoComKafra"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcontratocomkafra" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/contratoComKafraTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btContratoComKafraInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btContratoComKafraDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtContratoComKafraPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btContratoComKafraAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Comandar Guardiões -->
+
+                <LinearLayout
+                    android:id="@+id/layComandarGuardioes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcomandarguardioes" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/comandarGuardioesTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btComandarGuardioesInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btComandarGuardioesDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtComandarGuardioesPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btComandarGuardioesAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Expandir Clã -->
+
+                <LinearLayout
+                    android:id="@+id/layExpandirCla"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habexpandircla" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/expandirClaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btExpandirClaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btExpandirClaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtExpandirClaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/10" />
+
+                            <Button
+                                android:id="@+id/btExpandirClaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Grande Liderança -->
+
+                <LinearLayout
+                    android:id="@+id/layGrandeLideranca"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habgrandelideranca" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/grandeLiderancaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btGrandeLiderancaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btGrandeLiderancaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtGrandeLiderancaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btGrandeLiderancaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Ferimentos De Glória -->
+
+                <LinearLayout
+                    android:id="@+id/layFerimentosDeGloria"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habferimentosdegloria" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/ferimentosDeGloriaTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btFerimentosDeGloriaInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btFerimentosDeGloriaDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtFerimentosDeGloriaPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btFerimentosDeGloriaAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Coração Frio -->
+
+                <LinearLayout
+                    android:id="@+id/layCoracaoFrio"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habcoracaofrio" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/coracaoFrioTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btCoracaoFrioInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btCoracaoFrioDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtCoracaoFrioPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btCoracaoFrioAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Olhar Apurado -->
+
+                <LinearLayout
+                    android:id="@+id/layOlharApurado"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habolharapurado" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/olharApuradoTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btOlharApuradoInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btOlharApuradoDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtOlharApuradoPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/5" />
+
+                            <Button
+                                android:id="@+id/btOlharApuradoAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Fortalecer Guardiões -->
+
+                <LinearLayout
+                    android:id="@+id/layFortalecerGuardioes"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habfortalecerguardioes" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/fortalecerGuardioesTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btFortalecerGuardioesInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btFortalecerGuardioesDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtFortalecerGuardioesPontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/3" />
+
+                            <Button
+                                android:id="@+id/btFortalecerGuardioesAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Habilidade Desenvolvimento Permanente -->
+
+                <LinearLayout
+                    android:id="@+id/layDesenvolvimentoPermanente"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/customborder" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/habdesenvolvimentopermanente" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/desenvolvimentoPermanenteTitulo"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tipoPassiva" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btDesenvolvimentoPermanenteInterrogacao"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imginterrogacao" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="5dp" >
+
+                            <Button
+                                android:id="@+id/btDesenvolvimentoPermanenteDiminuir"
+                                android:layout_width="13dp"
+                                android:layout_height="18dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/imgsetaesquerda" />
+
+                            <TextView
+                                android:id="@+id/txtDesenvolvimentoPermanentePontos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:text="0/1" />
+
+                            <Button
+                                android:id="@+id/btDesenvolvimentoPermanenteAumentar"
+                                android:layout_width="12dp"
+                                android:layout_height="23dp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/imgsetadireita" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:weightSum="1" >
+
+            <Button
+                android:id="@+id/btResetar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Resetar" />
+
+            <Button
+                android:id="@+id/btSalvar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Salvar" />
+
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/tgbtSomenteHabilidadeAprendida"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.8"
+            android:text="ToggleButton"
+            android:textOff="Mostrar Somente Habilidades Aprendidas [Desativado]"
+            android:textOn="Mostrar Somente Habilidades Aprendidas [Ativado]"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
