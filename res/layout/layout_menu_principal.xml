@@ -36,9 +36,16 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:gravity="center"
-                android:text=" Seja bem vindo ao guia de Ragnarok Online!"
+                android:text=" Seja bem-vindo ao Ragnarok Toolbox!"
                 android:textSize="18sp" />
 
+            <Button
+                android:id="@+id/btnoticias"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/title_activity_rss_reader" />
+            
             <Button
                 android:id="@+id/btpersonagens"
                 android:layout_width="fill_parent"
@@ -70,5 +77,12 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logopositivo" />
 
 </LinearLayout>

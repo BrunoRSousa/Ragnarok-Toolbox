@@ -39,11 +39,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="   Esse aplicativo não possui nenhuma ligação com a Gravity Corp. &amp; Lee Myung Jin que são os donos da marca Registrada Ragnarok Online, nem com a Level Up! Interactive S.A. que é a representante do jogo oficial no brasil.\n   Esse aplicativo foi criado por um jogador de Ragnarok com intuito de servir como um guia de bolso para o jogo." />
+                    android:text="   Esse aplicativo foi criado por um jogador de Ragnarok com intuito de servir como um guia de bolso para o jogo e não possui nenhuma ligação com a Gravity Corp. &amp; Lee Myung Jin que são os donos da marca registrada Ragnarok Online." />
 
             </LinearLayout>
         </ScrollView>
 
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logopositivo" />
 
 </LinearLayout>

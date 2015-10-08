@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="10dp">
+  <!-- Titulo -->
+  <TextView android:id="@+id/titulo_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25dip"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:textColor="#5d5d5d"/>
+  <!-- Descrição/Texto -->
+  <TextView android:id="@+id/descricao_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+  <!-- Data -->
+  <TextView android:id="@+id/dtPublicacao_label"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"/>
+
+  <Button
+      android:id="@+id/btNavegador"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="Ler notícia completa" />
+
+</LinearLayout>

@@ -50,7 +50,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text=" | "
+                android:text=" e "
                 android:textSize="12sp" />
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:text="Transclasse: 20"
+                android:text="Transclasse: 20 (69)"
                 android:textSize="12sp" />
 
             <TextView
@@ -98,6 +98,7 @@
             android:layout_height="wrap_content" >
 
             <LinearLayout
+                android:id="@+id/habilidades"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical" >
@@ -5701,15 +5702,22 @@
                 android:id="@+id/btResetar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:text="Resetar" />
+                android:layout_weight="0.3"
+                android:text="@string/resetarSkills" />
+            
+            <Button
+                android:id="@+id/btSalvarIMG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text="@string/salvarSkillsImg" />
 
             <Button
                 android:id="@+id/btSalvar"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:text="Salvar" />
+                android:layout_weight="0.3"
+                android:text="@string/salvarSkills" />
 
         </LinearLayout>
 

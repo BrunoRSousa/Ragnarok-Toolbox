@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.com.gdrag"
-    android:versionCode="1"
+    package="br.com.ragtoolbox"
+    android:versionCode="7"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
         android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,7 +20,8 @@
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <activity
-            android:name="br.com.gdrag.infos.MenuPrincipal"
+            android:name="br.com.ragtoolbox.infos.MenuPrincipal"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,129 +30,144 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="br.com.gdrag.infos.Classes"
+            android:name="br.com.ragtoolbox.infos.Classes"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_classes" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorNovoOuLoad"
+            android:name="br.com.ragtoolbox.simulador.SimuladorNovoOuLoad"
             android:label="@string/title_activity_simulador_novo_ou_load" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorEscolherPersona"
+            android:name="br.com.ragtoolbox.simulador.SimuladorEscolherPersona"
             android:label="@string/title_activity_simulador_escolher_persona" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorCavaleiroRunico"
+            android:name="br.com.ragtoolbox.simulador.SimuladorCavaleiroRunico"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_cavaleiro_runico" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorLoad"
+            android:name="br.com.ragtoolbox.simulador.SimuladorLoad"
             android:label="@string/title_activity_simulador_load" >
         </activity>
         <activity
-            android:name="br.com.gdrag.infos.SobreApp"
+            android:name="br.com.ragtoolbox.infos.SobreApp"
             android:label="@string/title_activity_sobre_app" >
         </activity>
         <activity
-            android:name="br.com.gdrag.infos.LogDeAtualizacao"
+            android:name="br.com.ragtoolbox.infos.LogDeAtualizacao"
             android:label="@string/title_activity_log_de_atualizacao" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorGuardiaoReal"
+            android:name="br.com.ragtoolbox.simulador.SimuladorGuardiaoReal"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_guardiao_real" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorArcano"
+            android:name="br.com.ragtoolbox.simulador.SimuladorArcano"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_arcano" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorFeiticeiro"
+            android:name="br.com.ragtoolbox.simulador.SimuladorFeiticeiro"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_feiticeiro" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorSentinela"
+            android:name="br.com.ragtoolbox.simulador.SimuladorSentinela"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_sentinela" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorTrovador"
+            android:name="br.com.ragtoolbox.simulador.SimuladorTrovador"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_trovador" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorMusa"
+            android:name="br.com.ragtoolbox.simulador.SimuladorMusa"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_musa" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorMecanico"
+            android:name="br.com.ragtoolbox.simulador.SimuladorMecanico"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_mecanico" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorBioquimico"
+            android:name="br.com.ragtoolbox.simulador.SimuladorBioquimico"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_bioquimico" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorSicario"
+            android:name="br.com.ragtoolbox.simulador.SimuladorSicario"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_sicario" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorRenegado"
+            android:name="br.com.ragtoolbox.simulador.SimuladorRenegado"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_renegado" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorArcebispo"
+            android:name="br.com.ragtoolbox.simulador.SimuladorArcebispo"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_arcebispo" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorShura"
+            android:name="br.com.ragtoolbox.simulador.SimuladorShura"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_shura" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorMestreTaekwon"
+            android:name="br.com.ragtoolbox.simulador.SimuladorMestreTaekwon"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_mestre_taekwon" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorEspiritualista"
+            android:name="br.com.ragtoolbox.simulador.SimuladorEspiritualista"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_espiritualista" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorKagerou"
+            android:name="br.com.ragtoolbox.simulador.SimuladorKagerou"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_kagerou" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorOboro"
+            android:name="br.com.ragtoolbox.simulador.SimuladorOboro"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_oboro" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorJusticeiro"
+            android:name="br.com.ragtoolbox.simulador.SimuladorJusticeiro"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_justiceiro" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorSuperAprendizExpandido"
+            android:name="br.com.ragtoolbox.simulador.SimuladorSuperAprendizExpandido"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_super_aprendiz_expandido" >
         </activity>
         <activity
-            android:name="br.com.gdrag.simulador.SimuladorCla"
+            android:name="br.com.ragtoolbox.simulador.SimuladorCla"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
             android:label="@string/title_activity_simulador_cla" >
+        </activity>
+        <activity
+            android:name="br.com.ragtoolbox.rss.RssActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_rss_reader" >
+        </activity>
+        <activity
+            android:name="br.com.ragtoolbox.feed.Noticias"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_noticias" >
+        </activity>
+        <activity
+            android:name="br.com.ragtoolbox.feed.Noticia"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:label="@string/title_activity_noticia" >
         </activity>
     </application>
 

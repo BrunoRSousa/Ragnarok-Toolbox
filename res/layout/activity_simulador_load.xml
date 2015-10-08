@@ -13,11 +13,11 @@
         android:layout_weight="0.9" >
     </ListView>
 
-    <Button
+    <!-- <Button
         android:id="@+id/btnApagarTudo"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.1"
-        android:text="Apagar todas as simulações" />
+        android:text="Apagar todas as simulações" />  -->
 
 </LinearLayout>
